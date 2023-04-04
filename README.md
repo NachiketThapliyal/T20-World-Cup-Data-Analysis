@@ -6,24 +6,22 @@ This code processes data from T20 World Cup cricket matches, specifically battin
 
 1. Clone the repository to your local machine.
 2. Navigate to the root directory of the project.
-3. Create a folder named "json file" in your Desktop.
-4. Add the T20 World Cup match data files to the "json file" folder. These files are:
-- t20_wc_match_results.json
-- t20_wc_batting_summary.json
-- t20_wc_bowling_summary.json
-
-5. Install the necessary libraries by running the following command:
+3. Install the necessary libraries by running the following command:
 pip install pandas
-
-6. Run the script in your preferred IDE or from the command line using the following command:
+4. Run the script in your preferred IDE or from the command line using the following command:
 python T20_World_Cup_Data_Processing.py
 
 ## Code Description
 
 The code is divided into multiple sections, each section responsible for processing a specific data file.
 
+At first, the following files are generated using web scraping:
+- t20_wc_match_results.json
+- t20_wc_batting_summary.json
+- t20_wc_bowling_summary.json
+
 ### Match Results Data
-The first section of the code processes the match results data. It reads the data from the "t20_wc_match_results.json" file, extracts the match summary information, and creates a pandas dataframe. The resulting dataframe contains the match id, team names, venue, and match outcome.
+This section of the code processes the match results data. It reads the data from the "t20_wc_match_results.json" file, extracts the match summary information, and creates a pandas dataframe. The resulting dataframe contains the match id, team names, venue, and match outcome.
 
 ### Batting Summary Data
 The second section of the code processes the batting summary data. It reads the data from the "t20_wc_batting_summary.json" file, extracts the batting summary information for each match, and creates a pandas dataframe. The resulting dataframe contains the match id, batsman name, runs scored, balls faced, and other relevant statistics. The code also maps the match id from the match summary dataframe to the batting summary dataframe using a dictionary.
