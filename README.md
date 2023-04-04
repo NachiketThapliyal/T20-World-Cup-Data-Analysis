@@ -1,4 +1,5 @@
-# T20 World Cup Match Data Processing
+# T20 World Cup Match Data Analysis
+
 This code processes data from T20 World Cup cricket matches, specifically batting and bowling summaries. The data is provided in JSON format and is stored in local files. The code uses the pandas library for data manipulation and json module for loading JSON data.
 
 ## Getting Started
