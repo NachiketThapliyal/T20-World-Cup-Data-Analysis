@@ -36,3 +36,5 @@ The last section of the code performs some data cleaning operations on the batti
 
 ### Saving Data
 The cleaned dataframes are then saved as CSV files in the same "json file" folder where the input files are stored.
+
+## Power BI Visualisation
